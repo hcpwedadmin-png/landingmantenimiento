@@ -1,0 +1,214 @@
+/* ============================================
+   HCP CONSULTORES - Landing en mantenimiento
+   Paleta: blanco, negro y rojo
+   ============================================ */
+
+:root {
+    --color-blanco: #ffffff;
+    --color-negro:  #0a0a0a;
+    --color-gris:   #1a1a1a;
+    --color-gris-claro: #e5e5e5;
+    --color-gris-texto: #b5b5b5;
+    --color-rojo:   #d32f2f;
+    --color-rojo-hover: #b71c1c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-negro);
+    background-image:
+        radial-gradient(circle at 20% 20%, rgba(211, 47, 47, 0.10) 0%, transparent 45%),
+        radial-gradient(circle at 80% 80%, rgba(211, 47, 47, 0.08) 0%, transparent 45%);
+    color: var(--color-blanco);
+    padding: 24px;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ============ Contenedor principal ============ */
+.container {
+    max-width: 640px;
+    width: 100%;
+    background: linear-gradient(180deg, #111111 0%, #0a0a0a 100%);
+    border: 1px solid #222;
+    border-top: 3px solid var(--color-rojo);
+    border-radius: 4px;
+    padding: 48px 40px 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+/* ============ Encabezado ============ */
+.header {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.logo {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.divider {
+    width: 60px;
+    height: 2px;
+    background-color: var(--color-rojo);
+    margin: 0 auto 16px;
+}
+
+.subtitle {
+    font-size: 0.85rem;
+    color: var(--color-gris-texto);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* ============ Contenido ============ */
+.content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: var(--color-blanco);
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+    line-height: 1.25;
+}
+
+.message {
+    font-size: 1rem;
+    color: var(--color-gris-texto);
+    line-height: 1.7;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* ============ Contacto ============ */
+.contact {
+    margin-bottom: 36px;
+}
+
+.contact-label {
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--color-rojo);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ============ Botones ============ */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 24px;
+    font-size: 0.98rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.25s ease;
+    letter-spacing: 0.3px;
+}
+
+.btn .icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+/* Botón principal — Rojo */
+.btn-primary {
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+    border: 1px solid var(--color-rojo);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-rojo-hover);
+    border-color: var(--color-rojo-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(211, 47, 47, 0.35);
+}
+
+/* Botón secundario — Negro con borde blanco */
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-blanco);
+    border: 1px solid #333;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    border-color: var(--color-blanco);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* ============ Pie de página ============ */
+.footer {
+    text-align: center;
+    padding-top: 24px;
+    border-top: 1px solid #222;
+    font-size: 0.78rem;
+    color: #6f6f6f;
+    line-height: 1.6;
+}
+
+.footer-tagline {
+    margin-top: 6px;
+    color: #565656;
+    letter-spacing: 0.5px;
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 520px) {
+    .container {
+        padding: 36px 24px 28px;
+    }
+
+    .logo {
+        max-width: 170px;
+    }
+
+    h1 {
+        font-size: 1.45rem;
+    }
+
+    .message {
+        font-size: 0.94rem;
+    }
+
+    .btn {
+        font-size: 0.92rem;
+        padding: 14px 18px;
+    }
+}

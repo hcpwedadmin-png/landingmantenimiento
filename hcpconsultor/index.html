@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HCP Consultores y Contadores | Sitio en Mantenimiento</title>
+<meta name="description" content="HCP Consultores y Contadores - Servicios contables, fiscales y de consultoria empresarial. Sitio en mantenimiento. Contactanos por WhatsApp, Instagram o correo electronico.">
+<meta name="keywords" content="HCP Consultores, contadores, contabilidad, consultoria fiscal, asesoria contable">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://hcpconsultores.com/">
+<meta property="og:title" content="HCP Consultores y Contadores">
+<meta property="og:description" content="Servicios contables, fiscales y consultoria empresarial.">
+<meta property="og:url" content="https://hcpconsultores.com/">
+<meta property="og:image" content="https://hcpconsultores.com/img/logo.webp">
+<link rel="icon" type="image/webp" href="img/logo.webp">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "HCP Consultores y Contadores",
+  "url": "https://hcpconsultores.com/",
+  "description": "Servicios profesionales de contabilidad, consultoria fiscal y asesoria empresarial.",
+  "telephone": "+584142104215",
+  "email": "Hcpconsultores1@gmail.com",
+  "image": "https://hcpconsultores.com/img/logo.webp",
+  "sameAs": [
+    "https://www.instagram.com/hcpconsultores",
+    "https://wa.me/584142104215"
+  ]
+}
+</script>
+
+<style>
+:root{
+  --blanco:#ffffff;
+  --negro:#0a0a0a;
+  --rojo:#d32f2f;
+  --rojo-hover:#b71c1c;
+  --gris-texto:#b5b5b5;
+}
+*{margin:0;padding:0;box-sizing:border-box;
+  font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;}
+html,body{min-height:100vh;}
+body{
+  display:flex;align-items:center;justify-content:center;
+  background-color:var(--negro);
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(211,47,47,0.10) 0%, transparent 45%),
+    radial-gradient(circle at 80% 80%, rgba(211,47,47,0.08) 0%, transparent 45%);
+  color:var(--blanco);
+  padding:24px;
+  -webkit-font-smoothing:antialiased;
+}
+.container{
+  max-width:640px;width:100%;
+  background:linear-gradient(180deg,#111 0%,#0a0a0a 100%);
+  border:1px solid #222;
+  border-top:3px solid var(--rojo);
+  border-radius:4px;
+  padding:48px 40px 40px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.6);
+}
+.header{text-align:center;margin-bottom:36px;}
+.logo{max-width:220px;width:100%;height:auto;display:block;margin:0 auto 20px;}
+.fallback-title{
+  display:none;
+  font-size:2rem;font-weight:800;letter-spacing:4px;
+  color:var(--blanco);margin-bottom:18px;
+}
+.fallback-title span{color:var(--rojo);}
+.divider{width:60px;height:2px;background:var(--rojo);margin:0 auto 16px;}
+.subtitle{
+  font-size:.85rem;color:var(--gris-texto);
+  letter-spacing:3px;text-transform:uppercase;font-weight:500;
+}
+.content{text-align:center;margin-bottom:40px;}
+h1{
+  font-size:1.85rem;font-weight:700;color:var(--blanco);
+  margin-bottom:16px;letter-spacing:-0.5px;line-height:1.25;
+}
+.message{
+  font-size:1rem;color:var(--gris-texto);
+  line-height:1.7;max-width:480px;margin:0 auto;
+}
+.contact{margin-bottom:36px;}
+.contact-label{
+  text-align:center;font-size:.78rem;color:var(--rojo);
+  letter-spacing:3px;text-transform:uppercase;font-weight:600;
+  margin-bottom:20px;
+}
+.buttons{display:flex;flex-direction:column;gap:12px;}
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  padding:15px 24px;font-size:.98rem;font-weight:600;
+  text-decoration:none;border-radius:4px;
+  transition:all .25s ease;letter-spacing:.3px;
+}
+.btn .icon{width:20px;height:20px;fill:currentColor;flex-shrink:0;}
+
+/* Boton principal - WhatsApp (rojo solido) */
+.btn-primary{
+  background-color:var(--rojo);color:var(--blanco);
+  border:1px solid var(--rojo);
+}
+.btn-primary:hover{
+  background-color:var(--rojo-hover);border-color:var(--rojo-hover);
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(211,47,47,.35);
+}
+
+/* Boton Instagram (borde rojo, fondo negro) */
+.btn-instagram{
+  background-color:transparent;color:var(--rojo);
+  border:1px solid var(--rojo);
+}
+.btn-instagram:hover{
+  background-color:var(--rojo);color:var(--blanco);
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(211,47,47,.35);
+}
+
+/* Boton Correo - Gmail (borde blanco suave) */
+.btn-secondary{
+  background:transparent;color:var(--blanco);border:1px solid #333;
+}
+.btn-secondary:hover{
+  background:var(--blanco);color:var(--negro);
+  border-color:var(--blanco);transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(255,255,255,.1);
+}
+
+.footer{
+  text-align:center;padding-top:24px;border-top:1px solid #222;
+  font-size:.78rem;color:#6f6f6f;line-height:1.6;
+}
+.footer-tagline{margin-top:6px;color:#565656;letter-spacing:.5px;}
+@media (max-width:520px){
+  .container{padding:36px 24px 28px;}
+  .logo{max-width:170px;}
+  h1{font-size:1.45rem;}
+  .message{font-size:.94rem;}
+  .btn{font-size:.92rem;padding:14px 18px;}
+}
+</style>
+</head>
+<body>
+<main class="container">
+
+  <header class="header">
+    <img src="img/logo.webp"
+         alt="HCP Consultores y Contadores"
+         class="logo"
+         onerror="this.style.display='none';document.querySelector('.fallback-title').style.display='block';">
+    <h2 class="fallback-title">HCP<span>.</span></h2>
+    <div class="divider"></div>
+    <p class="subtitle">Contadores &amp; Asesores</p>
+  </header>
+
+  <section class="content">
+    <h1>Sitio en mantenimiento</h1>
+    <p class="message">
+      Estamos actualizando nuestro sitio web para brindarle un mejor servicio.
+      Mientras tanto, puede comunicarse con nosotros a traves de los siguientes canales.
+    </p>
+  </section>
+
+  <section class="contact">
+    <p class="contact-label">Canales de contacto</p>
+    <div class="buttons">
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/584142104215?text=Hola%20HCP%20Consultores%2C%20necesito%20asesor%C3%ADa%20contable"
+         class="btn btn-primary" target="_blank" rel="noopener"
+         aria-label="Contactar por WhatsApp">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/hcpconsultores"
+         class="btn btn-instagram" target="_blank" rel="noopener"
+         aria-label="Contactar por Instagram">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+        </svg>
+        <span>Instagram</span>
+      </a>
+
+      <!-- Correo electronico - abre Gmail directamente -->
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Hcpconsultores1@gmail.com&su=Consulta%20desde%20el%20sitio%20web&body=Hola%20HCP%20Consultores%2C%0A%0AMe%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios%20contables.%0A%0AGracias."
+         class="btn btn-secondary" target="_blank" rel="noopener"
+         aria-label="Enviar correo electronico por Gmail">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+        </svg>
+        <span>Enviar correo por Gmail:Hcpconsultores1@gmail.com</span>
+      </a>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> HCP Consultores y Contadores. Todos los derechos reservados.</p>
+    <p class="footer-tagline">Servicios contables &middot; Consultor&iacute;a fiscal &middot; Asesor&iacute;a empresarial</p>
+  </footer>
+
+</main>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
